@@ -1,2 +1,33 @@
-# cod-factory7
-This is my initial repo
+## My Diary App
+
+### Περιγραφή
+Μια απλή εφαρμογή ημερολογίου όπου ο χρήστης μπορεί να κάνει login και να αποθηκεύει τις εγγραφές του.
+
+### Προαπαιτούμενα
+- Node.js
+- npm
+
+### Εγκατάσταση
+1. Κλωνοποίησε το repo:
+   git clone https://github.com/sophia7konti/cod-factory7.git
+2. Πήγαινε στο φάκελο:
+   cd cod-factory7
+3. Εγκατάστησε τις εξαρτήσεις:
+   npm install
+
+### Εκκίνηση
+Τρέξε την εφαρμογή:
+npm start
+Η εφαρμογή θα τρέχει στο http://localhost:3000 (ή σε άλλο διαθέσιμο port).
+
+### Προσθήκη Εγγραφών
+- Οι εγγραφές αποθηκεύονται στο `data/entries.json`.
+- Μπορείς να προσθέσεις νέες εγγραφές μέσω POST request στο `/entries`.
+
+### Deploy
+Η εφαρμογή μπορεί να τρέξει σε οποιοδήποτε hosting που υποστηρίζει Node.js (π.χ., Heroku, Railway, Vercel).
+1. Σημείωσε τις μεταβλητές περιβάλλοντος στο `.env` αν χρειάζεται.
+2. Τρέξε:
+   npm install
+   npm start
+
