@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>My Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginDiv">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <p id="loginMsg"></p>
+  </div>
+
+  <div id="diaryDiv" style="display:none;">
+    <h2>Σημειώσεις</h2>
+    <textarea id="newEntry" placeholder="Γράψε κάτι..."></textarea>
+    <button id="addEntryBtn">Προσθήκη Σημείωσης</button>
+    <ul id="entriesList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

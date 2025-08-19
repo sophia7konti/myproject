@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background: fuchsia;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+input, textarea, button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
