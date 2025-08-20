@@ -11,7 +11,11 @@
 1. Κλωνοποίησε το repo:
    git clone https://github.com/sophia7konti/myproject.git
 2. Πήγαινε στο φάκελο:
+<<<<<<< HEAD
    cd cod-factory7
+=======
+   cd myproject
+>>>>>>> 3a184adea379433081ea6c46ba29511bf30b6153
 3. Εγκατάστησε τις εξαρτήσεις:
    npm install
 
