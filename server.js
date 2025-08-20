@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
 
 // Στατικό username/password
 const USER = { username: 'admin', password: '1234' };
@@ -38,6 +37,20 @@ app.post('/entries', (req, res) => {
   res.json({ success: true });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+// Αυτόματη επιλογή ελεύθερης θύρας
+const DEFAULT_PORT = 3000;
+const server = app.listen(DEFAULT_PORT, () => {
+  console.log(`Server running on http://localhost:${DEFAULT_PORT}`);
+});
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.log(`Port ${DEFAULT_PORT} is in use, trying another port...`);
+    const randomPort = Math.floor(Math.random() * (4000 - 3001 + 1)) + 3001; // 3001-4000
+    server.listen(randomPort, () => {
+      console.log(`Server running on http://localhost:${randomPort}`);
+    });
+  } else {
+    console.error(err);
+  }
 });

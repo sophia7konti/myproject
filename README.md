@@ -9,7 +9,7 @@
 
 ### Εγκατάσταση
 1. Κλωνοποίησε το repo:
-   git clone https://github.com/sophia7konti/cod-factory7.git
+   git clone https://github.com/sophia7konti/myproject.git
 2. Πήγαινε στο φάκελο:
    cd cod-factory7
 3. Εγκατάστησε τις εξαρτήσεις:
