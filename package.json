@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "start-backend": "node backend/server.js",
-    "start-frontend": "set PORT=3003 && npm start --prefix frontend",
+    "start-frontend": "cross-env PORT=3003 npm start --prefix frontend",
     "install-all": "npm install --prefix backend && npm install --prefix frontend",
     "frontend": "npm start --prefix frontend",
     "backend": "npm start --prefix backend",
@@ -14,17 +14,23 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "concurrently": "^9.2.0"
+    "body-parser": "^1.20.2",
+    "concurrently": "^9.2.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sophia7konti/myproject.git"
+    "url": "git+https://github.com/sophia7konti/myfinalproject.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sophia7konti/myproject/issues"
+    "url": "https://github.com/sophia7konti/myfinalproject/issues"
   },
-  "homepage": "https://github.com/sophia7konti/myproject#readme"
+  "homepage": "https://github.com/sophia7konti/myfinalproject#readme"
 }
